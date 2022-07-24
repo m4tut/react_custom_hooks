@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.use-fetching__list {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  list-style: none;
+}
+
+.use-fetching__list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.use-fetching__list-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #2eb845;
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+}
